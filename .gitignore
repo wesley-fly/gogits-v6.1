@@ -1,0 +1,6 @@
+gogs
+!gogs/
+data/**
+log/**
+custom/**
+.DS_Store
