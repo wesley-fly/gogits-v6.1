@@ -16,7 +16,7 @@ apk add --no-cache --no-progress --virtual build-deps-go gcc musl-dev openssl go
 export GOROOT_BOOTSTRAP="$(go env GOROOT)"
 
 # Download Go
-wget -q "$GOLANG_SRC_URL" -O golang.tar.gz
+wget --no-check-certificate -q "$GOLANG_SRC_URL" -O golang.tar.gz
 echo "$GOLANG_SRC_SHA256  golang.tar.gz" | sha256sum -c -
 tar -C /usr/local -xzf golang.tar.gz
 rm golang.tar.gz
