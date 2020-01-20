@@ -1,5 +1,4 @@
 FROM alpine:3.5
-
 # Install system utils & Gogs runtime dependencies
 #ADD https://github.com/tianon/gosu/releases/download/1.9/gosu-amd64 /usr/sbin/gosu
 ADD gosu-amd64 /usr/sbin/gosu
